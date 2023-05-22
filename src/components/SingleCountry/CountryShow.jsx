@@ -1,12 +1,14 @@
 import React from 'react';
+import "./CountryShow.css";
 
 const CountryShow = (props) => {
     // let { name } = props;
     return (
-        <div>
+        <div className='country-style'>
+            <img src={props.flag}></img>
             <h2>Country Name:{props.test}</h2>
-            <h3>Population: {props.population}</h3>
-            <h3>capital: {props.capital}</h3>
+            <p>Population: {props.population}</p>
+            <p>capital: {props.capital}</p>
         </div>
     );
 };

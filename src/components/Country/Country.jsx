@@ -24,7 +24,8 @@ const Country = () => {
                 countryData.map( (country) => <CountryShow 
                 test={country.name.common} 
                 population={country.population}
-                capital={country.capital}></CountryShow>)
+                capital={country.capital}
+                flag ={country.flags.png}></CountryShow>)
             }
         </div>
     );
