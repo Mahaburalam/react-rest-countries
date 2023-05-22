@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import CountryShow from '../SingleCountry/CountryShow';
 
 const Country = () => {
     // step:1 use state
@@ -17,6 +18,14 @@ const Country = () => {
     return (
         <div>
             <h2>Total Number Of Countries We Get From API: {countryData.length}</h2>
+            {
+                // countryData.map( country => console.log(country))
+                // eslint-disable-next-line react/jsx-key
+                countryData.map( (country) => <CountryShow 
+                test={country.name.common} 
+                population={country.population}
+                capital={country.capital}></CountryShow>)
+            }
         </div>
     );
 };
