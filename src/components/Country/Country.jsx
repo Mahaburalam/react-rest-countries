@@ -13,7 +13,7 @@ const Country = () => {
         .then(res => res.json())
         .then(data => setCountryData(data));
     },[])
-
+ 
 
     return (
         <div>
@@ -22,6 +22,9 @@ const Country = () => {
                 // countryData.map( country => console.log(country))
                 // eslint-disable-next-line react/jsx-key
                 countryData.map( (country) => <CountryShow 
+                
+                country ={country} //pass all api data in at a time
+
                 test={country.name.common} 
                 population={country.population}
                 capital={country.capital}
