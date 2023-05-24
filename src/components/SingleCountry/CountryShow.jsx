@@ -9,6 +9,7 @@ const CountryShow = (props) => {
             <h2>Country Name:{props.test}</h2>
             <p>Population: {props.population}</p>
             <p>capital: {props.capital}</p>
+            <p>currencies: {props.money}</p>
         </div>
     );
 };

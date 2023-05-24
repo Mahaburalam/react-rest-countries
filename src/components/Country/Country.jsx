@@ -25,7 +25,8 @@ const Country = () => {
                 test={country.name.common} 
                 population={country.population}
                 capital={country.capital}
-                flag ={country.flags.png}></CountryShow>)
+                flag={country.flags.png}
+                ></CountryShow>)
             }
         </div>
     );
