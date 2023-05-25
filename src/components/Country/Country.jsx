@@ -24,7 +24,7 @@ const Country = () => {
                 // eslint-disable-next-line react/jsx-key
                 countryData.map( (country) => <CountryShow 
                 
-                country ={country} //pass all api data in at a time
+                storeCountryData = {country} //pass all api data in at a time
 
                 test={country.name.common} 
                 population={country.population}
